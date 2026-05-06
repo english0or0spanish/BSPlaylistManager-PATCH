@@ -1,0 +1,19 @@
+using System.Diagnostics;
+using System.Reflection;
+using System.Runtime.CompilerServices;
+using System.Runtime.Versioning;
+using System.Security;
+using System.Security.Permissions;
+
+[assembly: InternalsVisibleTo("IPA.Config.Generated")]
+[assembly: IgnoresAccessChecksTo("BeatSaber.ViewSystem")]
+[assembly: IgnoresAccessChecksTo("DataModels")]
+[assembly: IgnoresAccessChecksTo("HMUI")]
+[assembly: IgnoresAccessChecksTo("Main")]
+[assembly: AssemblyCompany("PlaylistManager")]
+[assembly: AssemblyConfiguration("Release")]
+[assembly: AssemblyFileVersion("1.7.4.0")]
+[assembly: AssemblyInformationalVersion("1.7.4+bb67815000bad4445459e171964fffe7c0562186")]
+[assembly: AssemblyProduct("PlaylistManager")]
+[assembly: AssemblyTitle("PlaylistManager")]
+[assembly: AssemblyVersion("1.7.4.0")]

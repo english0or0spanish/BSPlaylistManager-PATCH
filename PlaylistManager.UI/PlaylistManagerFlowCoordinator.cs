@@ -1,0 +1,48 @@
+using System;
+using HMUI;
+using Zenject;
+
+namespace PlaylistManager.UI;
+
+internal class PlaylistManagerFlowCoordinator : FlowCoordinator, IInitializable, IDisposable
+{
+	private FlowCoordinator parentFlowCoordinator;
+
+	private SettingsViewController settingsViewController;
+
+	private ContributorsViewController contributorsViewController;
+
+	[Inject]
+	public void Construct(SettingsViewController settingsViewController, ContributorsViewController contributorsViewController)
+	{
+		this.settingsViewController = settingsViewController;
+		this.contributorsViewController = contributorsViewController;
+	}
+
+	public void Initialize()
+	{
+		settingsViewController.DismissFlowEvent += DismissFlowCoordinator;
+	}
+
+	public void Dispose()
+	{
+		settingsViewController.DismissFlowEvent -= DismissFlowCoordinator;
+	}
+
+	protected override void DidActivate(bool firstActivation, bool addedToHierarchy, bool screenSystemEnabling)
+	{
+		ProvideInitialViewControllers(settingsViewController, null, contributorsViewController);
+	}
+
+	public void PresentFlowCoordinator(FlowCoordinator parentFlowCoordinator)
+	{
+		this.parentFlowCoordinator = parentFlowCoordinator;
+		parentFlowCoordinator.PresentFlowCoordinator(this, null, ViewController.AnimationDirection.Vertical);
+	}
+
+	private void DismissFlowCoordinator()
+	{
+		contributorsViewController.gameObject.SetActive(value: false);
+		parentFlowCoordinator.DismissFlowCoordinator(this, ViewController.AnimationDirection.Vertical);
+	}
+}

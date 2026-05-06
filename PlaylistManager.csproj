@@ -1,0 +1,172 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <AssemblyName>PlaylistManager</AssemblyName>
+    <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
+    <TargetFramework>net48</TargetFramework>
+  </PropertyGroup>
+  <PropertyGroup>
+    <LangVersion>14.0</LangVersion>
+    <AllowUnsafeBlocks>True</AllowUnsafeBlocks>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace />
+  </PropertyGroup>
+  <ItemGroup>
+    <None Remove="PlaylistManager.Description.md" />
+    <None Remove="PlaylistManager.manifest.json" />
+    <None Remove="PlaylistManager.Icons.AddToPlaylist.png" />
+    <None Remove="PlaylistManager.Icons.Auros.png" />
+    <None Remove="PlaylistManager.Icons.ButtonIcon.png" />
+    <None Remove="PlaylistManager.Icons.CustomPacks.png" />
+    <None Remove="PlaylistManager.Icons.DefaultIcon.png" />
+    <None Remove="PlaylistManager.Icons.FolderIcon.png" />
+    <None Remove="PlaylistManager.Icons.Folders.png" />
+    <None Remove="PlaylistManager.Icons.Github.png" />
+    <None Remove="PlaylistManager.Icons.Kofi.png" />
+    <None Remove="PlaylistManager.Icons.LevelPacks.png" />
+    <None Remove="PlaylistManager.Icons.Logo.png" />
+    <None Remove="PlaylistManager.Icons.Metalit.png" />
+    <None Remove="PlaylistManager.Icons.Pixel.png" />
+    <None Remove="PlaylistManager.Icons.Playlists.png" />
+    <None Remove="PlaylistManager.Icons.RemoveFromPlaylist.png" />
+    <None Remove="PlaylistManager.Icons.Sync.png" />
+    <None Remove="PlaylistManager.Icons.Twitch.png" />
+    <None Remove="PlaylistManager.Icons.WhitePixel.png" />
+    <None Remove="PlaylistManager.Icons.Youtube.png" />
+    <None Remove="PlaylistManager.Icons.Zinga.png" />
+    <None Remove="PlaylistManager.UI.Views.AddPlaylistModal.bsml" />
+    <None Remove="PlaylistManager.UI.Views.ChangelogView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.ContributorsView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.FoldersView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.ImageSelectionModal.bsml" />
+    <None Remove="PlaylistManager.UI.Views.LevelDetailButtonsView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.PlaylistDetailsView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.PlaylistDetailViewButtons.bsml" />
+    <None Remove="PlaylistManager.UI.Views.PlaylistDownloaderView.bsml" />
+    <None Remove="PlaylistManager.UI.Views.PlaylistViewButtons.bsml" />
+    <None Remove="PlaylistManager.UI.Views.PopupModals.bsml" />
+    <None Remove="PlaylistManager.UI.Views.SettingsView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.Description.md" LogicalName="PlaylistManager.Description.md" />
+    <EmbeddedResource Include="PlaylistManager.manifest.json" LogicalName="PlaylistManager.manifest.json" />
+    <EmbeddedResource Include="PlaylistManager.Icons.AddToPlaylist.png" LogicalName="PlaylistManager.Icons.AddToPlaylist.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Auros.png" LogicalName="PlaylistManager.Icons.Auros.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.ButtonIcon.png" LogicalName="PlaylistManager.Icons.ButtonIcon.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.CustomPacks.png" LogicalName="PlaylistManager.Icons.CustomPacks.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.DefaultIcon.png" LogicalName="PlaylistManager.Icons.DefaultIcon.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.FolderIcon.png" LogicalName="PlaylistManager.Icons.FolderIcon.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Folders.png" LogicalName="PlaylistManager.Icons.Folders.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Github.png" LogicalName="PlaylistManager.Icons.Github.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Kofi.png" LogicalName="PlaylistManager.Icons.Kofi.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.LevelPacks.png" LogicalName="PlaylistManager.Icons.LevelPacks.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Logo.png" LogicalName="PlaylistManager.Icons.Logo.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Metalit.png" LogicalName="PlaylistManager.Icons.Metalit.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Pixel.png" LogicalName="PlaylistManager.Icons.Pixel.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Playlists.png" LogicalName="PlaylistManager.Icons.Playlists.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.RemoveFromPlaylist.png" LogicalName="PlaylistManager.Icons.RemoveFromPlaylist.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Sync.png" LogicalName="PlaylistManager.Icons.Sync.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Twitch.png" LogicalName="PlaylistManager.Icons.Twitch.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.WhitePixel.png" LogicalName="PlaylistManager.Icons.WhitePixel.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Youtube.png" LogicalName="PlaylistManager.Icons.Youtube.png" />
+    <EmbeddedResource Include="PlaylistManager.Icons.Zinga.png" LogicalName="PlaylistManager.Icons.Zinga.png" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.AddPlaylistModal.bsml" LogicalName="PlaylistManager.UI.Views.AddPlaylistModal.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.ChangelogView.bsml" LogicalName="PlaylistManager.UI.Views.ChangelogView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.ContributorsView.bsml" LogicalName="PlaylistManager.UI.Views.ContributorsView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.FoldersView.bsml" LogicalName="PlaylistManager.UI.Views.FoldersView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.ImageSelectionModal.bsml" LogicalName="PlaylistManager.UI.Views.ImageSelectionModal.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.LevelDetailButtonsView.bsml" LogicalName="PlaylistManager.UI.Views.LevelDetailButtonsView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.PlaylistDetailsView.bsml" LogicalName="PlaylistManager.UI.Views.PlaylistDetailsView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.PlaylistDetailViewButtons.bsml" LogicalName="PlaylistManager.UI.Views.PlaylistDetailViewButtons.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.PlaylistDownloaderView.bsml" LogicalName="PlaylistManager.UI.Views.PlaylistDownloaderView.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.PlaylistViewButtons.bsml" LogicalName="PlaylistManager.UI.Views.PlaylistViewButtons.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.PopupModals.bsml" LogicalName="PlaylistManager.UI.Views.PopupModals.bsml" />
+    <EmbeddedResource Include="PlaylistManager.UI.Views.SettingsView.bsml" LogicalName="PlaylistManager.UI.Views.SettingsView.bsml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="PlatformUserModel">
+      <HintPath>Refs\Beat Saber_Data\Managed\PlatformUserModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject-usage">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Zenject-usage.dll</HintPath>
+    </Reference>
+    <Reference Include="Main">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Main.dll</HintPath>
+    </Reference>
+    <Reference Include="BeatSaberPlaylistsLib">
+      <HintPath>..\..\BSInstances\1.42.0\Libs\BeatSaberPlaylistsLib.dll</HintPath>
+    </Reference>
+    <Reference Include="DataModels">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\DataModels.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.ImageConversionModule">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\UnityEngine.ImageConversionModule.dll</HintPath>
+    </Reference>
+    <Reference Include="IPA.Loader" />
+    <Reference Include="0Harmony">
+      <HintPath>..\..\BSInstances\1.42.0\Libs\0Harmony.dll</HintPath>
+    </Reference>
+    <Reference Include="SiraUtil">
+      <HintPath>..\..\BSInstances\1.42.0\Plugins\SiraUtil.dll</HintPath>
+    </Reference>
+    <Reference Include="HMUI">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\HMUI.dll</HintPath>
+    </Reference>
+    <Reference Include="Interactable">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Interactable.dll</HintPath>
+    </Reference>
+    <Reference Include="HMLib">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\HMLib.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Core" />
+    <Reference Include="SegmentedControl">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\SegmentedControl.dll</HintPath>
+    </Reference>
+    <Reference Include="BeatSaber.ViewSystem">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\BeatSaber.ViewSystem.dll</HintPath>
+    </Reference>
+    <Reference Include="BeatmapCore">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\BeatmapCore.dll</HintPath>
+    </Reference>
+    <Reference Include="SongCore">
+      <HintPath>..\..\BSInstances\1.42.0\Plugins\SongCore.dll</HintPath>
+    </Reference>
+    <Reference Include="BSML">
+      <HintPath>..\..\BSInstances\1.42.0\Plugins\BSML.dll</HintPath>
+    </Reference>
+    <Reference Include="UnityEngine.UI">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\UnityEngine.UI.dll</HintPath>
+    </Reference>
+    <Reference Include="Tweening">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Tweening.dll</HintPath>
+    </Reference>
+    <Reference Include="Unity.TextMeshPro">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Unity.TextMeshPro.dll</HintPath>
+    </Reference>
+    <Reference Include="PlatformUserModel">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\PlatformUserModel.dll</HintPath>
+    </Reference>
+    <Reference Include="Zenject">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\Zenject.dll</HintPath>
+    </Reference>
+    <Reference Include="BeatSaverSharp">
+      <HintPath>..\..\BSInstances\1.42.0\Libs\BeatSaverSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\System.IO.Compression.dll</HintPath>
+    </Reference>
+    <Reference Include="HMRendering">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\HMRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="Hive.Versioning">
+      <HintPath>..\..\BSInstances\1.42.0\Libs\Hive.Versioning.dll</HintPath>
+    </Reference>
+    <Reference Include="BGLib.DotnetExtension">
+      <HintPath>..\..\BSInstances\1.42.0\Beat Saber_Data\Managed\BGLib.DotnetExtension.dll</HintPath>
+    </Reference>
+    <Reference Include="System.IO.Compression.FileSystem" />
+  </ItemGroup>
+</Project>
+
